@@ -1,1 +1,1 @@
-# Gentrificaiton-Sucks
+# Gentrification-Sucks
