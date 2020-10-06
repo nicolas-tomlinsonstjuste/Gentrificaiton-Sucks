@@ -3,7 +3,9 @@
 <html>
     <head>
         <title>The Materialize Example</title>  
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1">        
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">    
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
          <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel = "stylsheet"  href= "style.css">
@@ -11,7 +13,30 @@
     <body>
             
             <div>
-                <header>
+                <header> 
+                    <div id ="menu">
+                        <nav>
+                        <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo">Gentrification sucks</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                          <li><a href="home.html">home</a></li>
+                          <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
+                          <li><a href="Response.html">response</a></li>
+                          <li><a href="Have-a-voice.html">Have a voice!</a></li>
+                          <li><a href="success-stories">Success-stories</a></li>
+                          <li><a href="Property-owners.html">Property owners working in solidarity with us</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                  
+                    <ul class="sidenav sidenav-trigger" id="mobile-demo">
+                      <li><a href="sass.html">Sass</a></li>
+                      <li><a href="badges.html">Components</a></li>
+                      <li><a href="collapsible.html">Javascript</a></li>
+                      <li><a href="mobile.html">Mobile</a></li>
+                    </ul>
+                </div>
                     <div class="card-panel teal lighten-2"><h1>I AIN'T AFRAID OF NO YUPPIES!</h1>
                     
                         <nav>
