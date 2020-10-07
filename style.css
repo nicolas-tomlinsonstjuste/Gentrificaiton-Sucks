@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     min-height: 100vh;
@@ -17,3 +18,7 @@ body {
     color: white;
     text-align: center;
  } */
+
+.nav-wrapper {
+    font-family: 'Open Sans Condensed', sans-serif
+}
