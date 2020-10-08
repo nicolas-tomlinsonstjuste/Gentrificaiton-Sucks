@@ -22,3 +22,32 @@ body {
 .nav-wrapper {
     font-family: 'Open Sans Condensed', sans-serif
 }
+
+  .result-bad {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(128, 9, 0);
+    color: white;
+  }
+
+  .result-fair {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(180, 177, 1);
+    color: white;
+  }
+
+  .result-good {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(21, 128, 0);
+    color: white;
+  }
+
+  .card-action {
+    color: white;
+  }
+
+  .hide {
+    display: none;
+}
