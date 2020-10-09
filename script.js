@@ -42,4 +42,54 @@ $.ajax({
     }).then(function (response) {
       console.log(response);
     });
+
+  });
+
+
+
+    //document.addEventListener('DOMContentLoaded', function() {
+    //    var elems = document.querySelectorAll('.sidenav');
+      //  var instances = Sidenav.init(elems, options);
+     // });
+     $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+
+
+
+      $("#calculateBtn").on("click", function () {
+        var rentAsk = $("#rent-input").val().trim();
+        searchWeather(rentAsk);
+        // Calling the renderButtons function to display the initial buttons   
+        renderButtons();
+
+    })
+
+      var calculateBtn = document.querySelector("#calculateBtn");
+      var goodCard = document.querySelector(".result-good");
+      var fairCard = document.querySelector(".result-fair");
+      var badCard = document.querySelector(".result-bad");
+
+      calculateBtn.addEventListener("click", function () {
+        if (rentAsk > calculatedRent){
+          goodCard.setAttribute("class", "hide");
+          fairCard.setAttribute("class", "hide");
+          badCard.removeAttribute("class", "hide");
+        } else if (rentAsk === calculatedRent){
+          goodCard.setAttribute("class", "hide");
+          fairCard.removeAttribute("class", "hide");
+          badCard.setttribute("class", "hide");
+        } else{
+          goodCard.removeAttribute("class", "hide");
+          fairCard.setAttribute("class", "hide");
+          badCard.setAttribute("class", "hide");
+        }
+      };
+
+      function calculateRent(){
+
+      };
+
+        calculateRent();
+
   });
