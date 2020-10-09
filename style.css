@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 =======
 
+=======
+>>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45
 body {
     display: flex;
     min-height: 100vh;
@@ -55,5 +58,12 @@ body {
 
   .hide {
     display: none;
+<<<<<<< HEAD
 }
 >>>>>>> cbad89c95c325e7afc50b4e1e2b876cca9780b5d
+=======
+  }
+   .main-section1{
+  font-family: 'Open Sans Condensed', sans-serif
+  }
+>>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45

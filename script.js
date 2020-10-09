@@ -1,3 +1,21 @@
+var zipCode = ''
+
+$(document).ready(function () {
+    // Get value on button click and show alert
+    $(".submitBtn").click(function(){
+        var str = $("#zipCode").val().trim();
+       zipCode = str
+        console.log (str)
+    
+    var airApiKey = "CB15C17F-69EA-4423-9893-864F339C43FA";
+    var environmentalZipCode = 19149;
+    var queryURL =
+    "https://cors-anywhere.herokuapp.com/https://www.airnowapi.org/aq/observation/zipCode/historical/?format=text/csv&zipCode=" +
+    zipCode +
+    "&date=2015-10-05T00-0000&distance=25&API_KEY=CB15C17F-69EA-4423-9893-864F339C43FA";
+
+    // Performing our AJAX GET request
+   
 var airApiKey = "CB15C17F-69EA-4423-9893-864F339C43FA";
 var environmentalZipCode = 19149;
 var queryURL =
@@ -39,15 +57,42 @@ $.ajax({
         Authorization:
           "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijc4MmM4ZmJmNWUzMmJmYTVhNjg1YzE0OWE5N2UyNjBmZjZjODcxZTgzMjYxNWFjNDg5MWEzZDNhY2VhN2Y2NTA0YTBmMzUzMjhmNzhiMmNkIn0.eyJhdWQiOiI2IiwianRpIjoiNzgyYzhmYmY1ZTMyYmZhNWE2ODVjMTQ5YTk3ZTI2MGZmNmM4NzFlODMyNjE1YWM0ODkxYTNkM2FjZWE3ZjY1MDRhMGYzNTMyOGY3OGIyY2QiLCJpYXQiOjE2MDIwMjM0MzEsIm5iZiI6MTYwMjAyMzQzMSwiZXhwIjoxOTE3NTU2MjMxLCJzdWIiOiI5NzUwIiwic2NvcGVzIjpbXX0.U_HzN_NuOd_bTARXe-tgMLeSzwVIRg8G7nNxow-keMgSH6KM4NFrbrVLn89XH8B8ZpdrzE5a2rwHkyD-Kn48pw",
       },
-    }).then(function (response) {
-      console.log(response);
+     }).then(function (response1) {
+                console.log(response1.data);
+                console.log(zipCode);
+                for (var i = 0; i < response1.data.basicdata.length; i++) {
+                    
+                    if (response1.data.basicdata[i].zip_code === zipCode) {
+                        console.log(response1.data.basicdata[i]['One-Bedroom'] + ' for a 1-Bedroom');
+                        //bedroomInput = drop down similar to var Varname = $("#zipCode").val().trim();
+                        if (bedroomInput === 'One-Bedroom') {
+                            //1000 = user input for asking price
+                            if (response1.data.basicdata[i]['One-Bedroom'] > 1000 ) {
+                                //do something/compare
+                            }
+                            
+                        }
+                        console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
+                        console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
+                        console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
+                                
+                    }
+                }
+            
+            });
+        });
     });
+})
 
+
+<<<<<<< HEAD
 <<<<<<< HEAD
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems, options)};
 =======
+=======
+>>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45
 
     //document.addEventListener('DOMContentLoaded', function() {
     //    var elems = document.querySelectorAll('.sidenav');
@@ -95,5 +140,8 @@ $.ajax({
         calculateRent();
 
   });
+<<<<<<< HEAD
 
 >>>>>>> cbad89c95c325e7afc50b4e1e2b876cca9780b5d
+=======
+>>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45
