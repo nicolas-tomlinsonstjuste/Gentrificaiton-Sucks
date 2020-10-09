@@ -1,3 +1,27 @@
-.menu {
-    font-family: 'Open Sans Condensed', sans-serif;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* .footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+} */
+
+.nav-wrapper {
+  font-family: 'Open Sans Condensed', sans-serif
+}
+.main-section1{
+  font-family: 'Open Sans Condensed', sans-serif
+
 }
