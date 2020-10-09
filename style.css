@@ -44,6 +44,13 @@ body {
     color: white;
   }
 
+  .result-warning {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(128, 9, 0);
+    color: white;
+  }
+
   .card-action {
     color: white;
   }
