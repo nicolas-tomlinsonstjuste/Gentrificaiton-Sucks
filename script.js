@@ -43,6 +43,9 @@ $.ajax({
       console.log(response);
     });
 
+  });
+
+
 
     //document.addEventListener('DOMContentLoaded', function() {
     //    var elems = document.querySelectorAll('.sidenav');
@@ -90,4 +93,3 @@ $.ajax({
         calculateRent();
 
   });
-
