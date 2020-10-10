@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>The Materialize Example</title>  
+        <title>Gentrification Sucks</title>  
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">    
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
          <!-- Compiled and minified CSS -->
@@ -10,6 +10,8 @@
         <link rel = "stylesheet"  href= "style.css">
     </head>
     <body>
+         <input type="text" id= 'zipCode'>
+         <button id = "searchBtn" class = "submitBtn">Submit</button>
      <div>
             <header> 
                 <nav>
@@ -17,7 +19,7 @@
                       <a href="#!" class="brand-logo">Gentrification sucks</a>
                       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                       <ul class="right hide-on-med-and-down">
-                        <li><a href="home.html">home</a></li>
+                        <li><a href="home.html">Home</a></li>
                           <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
@@ -28,7 +30,7 @@
                   </nav>
                 
                   <ul class="sidenav" id="mobile-demo">
-                    <li><a href="home.html">home</a></li>
+                    <li><a href="home.html">Home</a></li>
                           <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
@@ -36,10 +38,8 @@
                           <li><a href="Property-owners.html">Property owners working in solidarity with us</a></li>
 
                   </ul>
-                
-                <header>
+
                     <div class="card-panel teal lighten-2"><h1>I AIN'T AFRAID OF NO YUPPIES!</h1>
-                    
                         <nav>
                              <div class="nav-wrapper">
                                  <form>
@@ -54,9 +54,20 @@
                     
                     </div>                   
                 </header>
-            </div> 
+         
            <main>
                  <div>
+
+                     <p>Content in main is awesome brosef</p>
+
+                </div>
+                   
+                <div class="main-section1">
+                  <h3>Why join the fight to protect communities against rising housing costs?</h3>
+                  <p>historically disenfranchised communties are disproportionately affected by rising housing costs, forcing residential and business communities to move by raising rental and tax costs. This tool is designed to calculate cost of living, median income brackets by zipcode and (other factors - historic data?, ...) against the input rental property data to determine how much you should pay in rent in order to work against inflating market prices.</p>
+                </div>
+                
+
                      <!-- Button to trigger an on click event and run rental calculations -->
                      <a class="calculateBtn waves-effect waves-light btn">Calculate Fair Rent</a>
                      <div class=row>
@@ -107,6 +118,7 @@
                           </div>
                       </div>
                     </div>
+
                       <div class=row>
                         <!-- Good Price result Card -->
                       <div class="card result-warning" id="air-quality-warning">
@@ -120,6 +132,7 @@
                       </div>
                   </div>
                 </div>
+
             </main>
        
             <footer class="page-footer">

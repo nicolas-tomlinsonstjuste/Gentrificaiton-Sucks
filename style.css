@@ -1,4 +1,3 @@
-
 body {
     display: flex;
     min-height: 100vh;
@@ -57,4 +56,29 @@ body {
 
   .hide {
     display: none;
-}
+  }
+
+   .main-section1{
+  font-family: 'Open Sans Condensed', sans-serif
+  }
+
+  .negotiation {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(180, 177, 1);
+    color: white;
+  }
+
+  .thanks{
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(21, 128, 0);
+    color: white;
+  }
+
+  .walk-away {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(128, 9, 0);
+    color: white;
+  }
