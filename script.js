@@ -24,9 +24,7 @@ $(document).ready(function () {
     var airApiKey = "CB15C17F-69EA-4423-9893-864F339C43FA";
     var environmentalZipCode = 19149;
     var queryURL =
-    "https://cors-anywhere.herokuapp.com/https://www.airnowapi.org/aq/observation/zipCode/historical/?format=text/csv&zipCode=" +
-    zipCode +
-    "&date=2015-10-05T00-0000&distance=25&API_KEY=CB15C17F-69EA-4423-9893-864F339C43FA";
+     var queryURL ="https://cors-anywhere.herokuapp.com/https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=" + zipCode + '&distance=5&API_KEY=CB15C17F-69EA-4423-9893-864F339C43FA';
 
     // Performing our AJAX GET request
         $.ajax({
@@ -39,6 +37,7 @@ $(document).ready(function () {
             var results = response.ReportingArea;
             // console.log(response[0].ReportingArea);
             console.log(response);
+            console.log(response[0].AQI);
 
             var xhttp = new XMLHttpRequest();
             var url =
