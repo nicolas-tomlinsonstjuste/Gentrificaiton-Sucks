@@ -7,14 +7,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
          <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      
         <link rel = "stylesheet"  href= "style.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     </head>
     <body>
-            
-   
             <header> 
                 <nav>
                     <div class="nav-wrapper">
@@ -44,18 +41,6 @@
                 
                 <header>
                     <div class="card-panel"><h1>I AIN'T AFRAID OF NO YUPPIES!</h1>
-                        <nav>
-                             <div class="nav-wrapper">
-                                 <form>
-                                      <div class="input-field">
-                                         <input id="search" type="search" required>
-                                            <label class="label-icon" for="search"><i class="material-icons">Zip Code</i></label>
-                                                <i class="material-icons">x</i>
-                                         </div>
-                                     </form>
-                             </div>
-                        </nav>
-                    
                     </div>                   
                 </header>
          
@@ -64,56 +49,46 @@
                 <div class="main-section1">
                   <h3>Why join the fight to protect communities against rising housing costs?</h3>
                   <p>historically disenfranchised communties are disproportionately affected by rising housing costs, forcing residential and business communities to move by raising rental and tax costs. This tool is designed to calculate cost of living, median income brackets by zipcode and (other factors - historic data?, ...) against the input rental property data to determine how much you should pay in rent in order to work against inflating market prices.</p>
-                </div>
-
-                <!-- <div id="modal1" class="modal">
-                  <div class="modal-content">
-                    <h4>Calculate Your Rent</h4>
-                    <p></p>
-                    <form id="form">
-                      <div class="row">
-                          <div class="input-field col s6">
-                            <input  id="zipCode1" type="text" class="validate">
-                            <label class="active" for="zipCode1">Zip Code</label>
+                  <h4>Calculate Your Rent</h4>
+                  <p></p>
+                      <form id="form">
+                        <div class="row">
+                            <div class="input-field col s6">
+                              <input  id="zipCode1" type="text" class="validate">
+                              <label class="active" for="zipCode1"><p>Zip Code</p></label>
+                            </div>
+                            <div class="input-field col s12"> 
+                                <select>
+                                  <option value="0"></option>
+                                  <option value="Efficieny">Studio</option>
+                                  <option value="1 Bedroom">1 Bedroom</option>
+                                  <option value="2 Bedroom">2 Bedroom</option>
+                                  <option value="3 Bedroom">3 Bedroom</option>
+                                  <option value="4 Bedroom">4 Bedroom</option>
+                                </select>
+                                <label>Number of Bedrooms</label>
+                              </div>
+                            <!-- <div class="input-field col s12">
+                                <select multiple>
+                                  <option value="1">1 Bedroom</option>
+                                  <option value="2">2 Bedroom</option>
+                                  <option value="3">3 Bedroom</option> 
+                                  <option value="4">4 Bedroom</option>
+                                </select>
+                                <label>Prefered number of bedrooms</label> -->
+                            <!-- </div> -->
+                            <div class="input-field col s6">
+                                <input  id="rentRange" type="text" class="validate">
+                                <label class="active" for="rentRange">Rental asking price</label>
+                              </div>
                           </div>
-                          <div class="input-field col s12">
-                              <select>
-                                <option value="0"></option>
-                                <option value="Efficieny">Studio</option>
-                                <option value="1 Bedroom">1 Bedroom</option>
-                                <option value="2 Bedroom">2 Bedroom</option>
-                                <option value="3 Bedroom">3 Bedroom</option>
-                                <option value="4 Bedroom">4 Bedroom</option>
-                              </select>
-                              <label>Number of Bedrooms</label>
-                            </div>
-                          <!-- <div class="input-field col s12">
-                              <select multiple>
-                                <option value="1">1 Bedroom</option>
-                                <option value="2">2 Bedroom</option>
-                                <option value="3">3 Bedroom</option>
-                                <option value="4">4 Bedroom</option>
-                              </select>
-                              <label>Prefered number of bedrooms</label> -->
-                          <!-- </div> -->
-                          <!-- <div class="input-field col s6">
-                              <input  id="rentRange" type="text" class="validate">
-                              <label class="active" for="rentRange">Rental asking price</label>
-                            </div>
-                        </div>
-                      <!-- <div id="test-slider"></div> -->
-                    <!-- </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button id="submit" class="modal-close waves-effect waves-green btn-flat">Submit</button>
-                  </div>
-                </div>
-         </div> --> -->
-                 -->
-
-
+                        <!-- <div id="test-slider"></div> -->
+                        <button id="submit" class="submit-btn waves-effect waves-green">Submit</button>
+                        </form>
+                    </div>
+               </div>
                      <!-- Button to trigger an on click event and run rental calculations -->
-                     <a class="calculateBtn waves-effect waves-light btn">Calculate Fair Rent</a>
+                    
                      <div class=row>
                         <!-- Bad Price result Card -->
                         <div class="card result-bad hide">
@@ -207,6 +182,8 @@
             <!-- <script src="script.js" async defer></script> -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <script src="script.js"></script>
+            <script src="./script.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/Dogfalo/materialize@master/extras/noUiSlider/nouislider.min.js"></script>
+            <script src="./form.js"></script>
     </body>
 </html>

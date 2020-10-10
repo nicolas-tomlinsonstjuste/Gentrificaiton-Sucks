@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>The Materialize Example</title>  
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">    
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel = "stylesheet"  href= "style.css">
+        <link href="https://cdn.jsdelivr.net/gh/Dogfalo/materialize@master/extras/noUiSlider/nouislider.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Calculate your rent</a>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Calculate Your Rent</h4>
+                  <p></p>
+                  <form id="form">
+                    <div class="row">
+                        <div class="input-field col s6">
+                          <input  id="zipCode1" type="text" class="validate">
+                          <label class="active" for="zipCode1">Zip Code</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                              <option value="0"></option>
+                              <option value="Efficieny">Studio</option>
+                              <option value="1 Bedroom">1 Bedroom</option>
+                              <option value="2 Bedroom">2 Bedroom</option>
+                              <option value="3 Bedroom">3 Bedroom</option>
+                              <option value="4 Bedroom">4 Bedroom</option>
+                            </select>
+                            <label>Number of Bedrooms</label>
+                          </div>
+                        <!-- <div class="input-field col s12">
+                            <select multiple>
+                              <option value="1">1 Bedroom</option>
+                              <option value="2">2 Bedroom</option>
+                              <option value="3">3 Bedroom</option> 
+                              <option value="4">4 Bedroom</option>
+                            </select>
+                            <label>Prefered number of bedrooms</label> -->
+                        <!-- </div> -->
+                        <div class="input-field col s6">
+                            <input  id="rentRange" type="text" class="validate">
+                            <label class="active" for="rentRange">Rental asking price</label>
+                          </div>
+                      </div>
+                    <!-- <div id="test-slider"></div> -->
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button id="submit" class="modal-close waves-effect waves-green btn-flat">Submit</button>
+                </div>
+              </div>
+
+       </div>
+           
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./script.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Dogfalo/materialize@master/extras/noUiSlider/nouislider.min.js"></script>
+        <script src="./form.js"></script>
+    </body>
+</html>

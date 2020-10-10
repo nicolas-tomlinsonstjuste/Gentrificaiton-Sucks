@@ -1,3 +1,43 @@
+
+var askingPrice = 1420;
+var bedroomInput0 = 'Efficiency'
+var bedroomInput1 = 'One-Bedroom'
+var bedroomInput2 = 'Two-Bedroom'
+var bedroomInput3 = 'Three-Bedroom'
+var bedroomInput4 = 'Four-Bedroom'
+var zipCode = ''
+const form = document.querySelector("#form");
+const submit = document.querySelector("#submit");
+const modal = document.querySelector('.modal');
+const bedrooms = document.querySelector('select');
+const rent = document.querySelector('#rentRange')
+// const priceRange = document.getElementById('test-slider');
+document.addEventListener('DOMContentLoaded', function() {
+    M.Modal.init(modal,{});
+    M.FormSelect.init(bedrooms,{});
+});
+// noUiSlider.create(priceRange, {
+//     start: [750, 1800],
+//     connect: true,
+//     step: 1,
+//     orientation: 'horizontal', // 'horizontal' or 'vertical'
+//     range: {
+//         'min': 0,
+//         'max': 3000
+//     },
+// });
+function submitform() {
+    const data = {
+        zip: '',
+        bedrooms: bedrooms.value,
+        rentRange: '',
+        // priceRange: priceRange.value
+    }
+    console.log('test success', data);
+}
+submit.addEventListener("click", submitform);
+
+
 $(document).ready(function () {
 
   var askingPrice = 1420;
@@ -203,6 +243,55 @@ $(document).ready(function () {
      $(document).ready(function(){
         $('.sidenav').sidenav();
       });
+
+
+
+      $("#calculateBtn").on("click", function () {
+        var rentAsk = $("#rent-input").val().trim();
+        searchZipcode(rentAsk);
+     
+    })
+
+      var calculateBtn = document.querySelector("#calculateBtn");
+      var goodCard = document.querySelector(".result-good");
+      var fairCard = document.querySelector(".result-fair");
+      var badCard = document.querySelector(".result-bad");
+      var warningCard = document.querySelector(".result-warning");
+      var airQuality = ""
+
+      calculateBtn.addEventListener("click", function () {
+        if (rentAsk > calculatedRent){
+          goodCard.setAttribute("class", "hide");
+          fairCard.setAttribute("class", "hide");
+          badCard.removeAttribute("class", "hide");
+            if (airQuality < 10){
+              warningCard.removeAttribute("class", "hide");
+            };
+        } else if (rentAsk === calculatedRent){
+          goodCard.setAttribute("class", "hide");
+          fairCard.removeAttribute("class", "hide");
+          badCard.setttribute("class", "hide");
+            if (airQuality < 10){
+              warningCard.removeAttribute("class", "hide");
+            };
+        } else{
+          goodCard.removeAttribute("class", "hide");
+          fairCard.setAttribute("class", "hide");
+          badCard.setAttribute("class", "hide");
+            if (airQuality < 10){
+              warningCard.removeAttribute("class", "hide");
+            }
+        } 
+      
+
+      function calculateRent(){
+
+      };
+
+        calculateRent();
+
+
+    )
 
         // const form = document.querySelector("#form");
         // const submit = document.querySelector("#submit");
