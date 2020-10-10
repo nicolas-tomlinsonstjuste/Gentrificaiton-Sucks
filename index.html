@@ -17,8 +17,7 @@
                     <div class="nav-wrapper">
                       <a href="#!" class="brand-logo">Gentrification sucks</a>
                       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                      <ul class="right hide-on-med-and-down">
-                        <li><a href="home.html">Home</a></li>
+                      <ul class="right hide-on-med-and-down">>
                           <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
@@ -30,7 +29,6 @@
                   
                    
                   <ul class="sidenav" id="mobile-demo">
-                    <li><a href="home.html">Home</a></li>
                           <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
@@ -48,16 +46,18 @@
            <main>
                 <div class="main-section1">
                   <h3>Why join the fight to protect communities against rising housing costs?</h3>
-                  <p>historically disenfranchised communties are disproportionately affected by rising housing costs, forcing residential and business communities to move by raising rental and tax costs. This tool is designed to calculate cost of living, median income brackets by zipcode and (other factors - historic data?, ...) against the input rental property data to determine how much you should pay in rent in order to work against inflating market prices.</p>
+                  <p class="title2">historically disenfranchised communties are disproportionately affected by rising housing costs, forcing residential and business communities to move by raising rental and tax costs. This tool is designed to calculate cost of living, median income brackets by zipcode and (other factors - historic data?, ...) against the input rental property data to determine how much you should pay in rent in order to work against inflating market prices.</p>
+                  <div class="title">
                   <h4>Calculate Your Rent</h4>
+                </div>
                   <p></p>
                       <form id="form">
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 ">
                               <input  id="zipCode1" type="text" class="validate">
                               <label class="active" for="zipCode1"><p>Zip Code</p></label>
                             </div>
-                            <div class="input-field col s12"> 
+                            <div class="input-field col s12 "> 
                                 <select>
                                   <option value="0"></option>
                                   <option value="Efficieny">Studio</option>
@@ -77,13 +77,13 @@
                                 </select>
                                 <label>Prefered number of bedrooms</label> -->
                             <!-- </div> -->
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 ">
                                 <input  id="rentRange" type="text" class="validate">
                                 <label class="active" for="rentRange">Rental asking price</label>
                               </div>
                           </div>
                         <!-- <div id="test-slider"></div> -->
-                        <button id="submit" class="submit-btn waves-effect waves-green">Submit</button>
+                        <button type="submit" class="btn waves-effect waves-light">Submit</button> 
                         </form>
                     </div>
                </div>

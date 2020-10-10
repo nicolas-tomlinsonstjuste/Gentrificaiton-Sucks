@@ -228,11 +228,13 @@ $(document).ready(function () {
 
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems, options)};
-
-        6c046220f8534f804e5ce3b92592c1c203320d45
+$(document).ready(function () {
+  var menu = $('.nav-wrapper');
+      var target = $('#' +menu.attr("data-target"));
+  menu.pushpin({
+    top: target.offset().top,
+  });
+});
 
 
     //document.addEventListener('DOMContentLoaded', function() {
