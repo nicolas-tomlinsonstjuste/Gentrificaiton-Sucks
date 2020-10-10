@@ -1,9 +1,6 @@
-const form = document.querySelector("#form");
-const submit = document.querySelector(".submitBtn");
+//const form = document.querySelector("#form");
 const modal = document.querySelector('.modal');
 const bedrooms = document.querySelector('select');
-const rent = document.querySelector('#rentRange')
-// const priceRange = document.getElementById('test-slider');
 document.addEventListener('DOMContentLoaded', function() {
     M.Modal.init(modal,{});
     M.FormSelect.init(bedrooms,{});
@@ -30,11 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // submit.addEventListener("click", submitform);
 
 
-//$("#someID or class").empty();
-
 $(document).ready(function () {
 
-  var zipCode = '19143'
+  var zipCode = ''
   var price = ''
   var bedroom = ''
   //var submitBtn = document.querySelector(".submitBtn");
@@ -47,7 +42,10 @@ $(document).ready(function () {
   // Get value on button click and show alert
   $("#form").submit(function(event){
     event.preventDefault()
-      // zipCode = $("#zipcode-input").val().trim();
+    // if (price !== ''){
+    //   $(".row-result").empty();};
+
+      zipCode = $("#zipcode-input").val().trim();
 
       price = $("#price-input").val().trim();
 
@@ -83,10 +81,11 @@ $(document).ready(function () {
                         "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijc4MmM4ZmJmNWUzMmJmYTVhNjg1YzE0OWE5N2UyNjBmZjZjODcxZTgzMjYxNWFjNDg5MWEzZDNhY2VhN2Y2NTA0YTBmMzUzMjhmNzhiMmNkIn0.eyJhdWQiOiI2IiwianRpIjoiNzgyYzhmYmY1ZTMyYmZhNWE2ODVjMTQ5YTk3ZTI2MGZmNmM4NzFlODMyNjE1YWM0ODkxYTNkM2FjZWE3ZjY1MDRhMGYzNTMyOGY3OGIyY2QiLCJpYXQiOjE2MDIwMjM0MzEsIm5iZiI6MTYwMjAyMzQzMSwiZXhwIjoxOTE3NTU2MjMxLCJzdWIiOiI5NzUwIiwic2NvcGVzIjpbXX0.U_HzN_NuOd_bTARXe-tgMLeSzwVIRg8G7nNxow-keMgSH6KM4NFrbrVLn89XH8B8ZpdrzE5a2rwHkyD-Kn48pw",
                 },
             }).then(function (response1) {
+
                 console.log(response1.data);
                 console.log(zipCode);
                 for (var i = 0; i < response1.data.basicdata.length; i++) {
-                    //if zipcode matches user input and bedroom choice === response1.data.basicdata['One-Bedroom'] then compare price vs price listed in response1.data.basicdata['One-Bedroom']. 
+                  //if zipcode matches user input and bedroom choice === response1.data.basicdata['One-Bedroom'] then compare price vs price listed in response1.data.basicdata['One-Bedroom']. 
 
                     //Studio apartment
                     if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Efficiency' && price < response1.data.basicdata[i]['Efficiency']) {
@@ -226,13 +225,13 @@ $(document).ready(function () {
     //     var elems = document.querySelectorAll('.sidenav');
     //     var instances = M.Sidenav.init(elems, options)};
 
-$(document).ready(function () {
-  var menu = $('.nav-wrapper');
-      var target = $('#' +menu.attr("data-target"));
-  menu.pushpin({
-    top: target.offset().top,
-  });
-});
+// $(document).ready(function () {
+//   var menu = $('.nav-wrapper');
+//       var target = $('#' +menu.attr("data-target"));
+//   menu.pushpin({
+//     top: target.offset().top,
+//   });
+//});
 
 
     //document.addEventListener('DOMContentLoaded', function() {
