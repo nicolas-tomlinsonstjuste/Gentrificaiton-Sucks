@@ -85,14 +85,12 @@ $.ajax({
 })
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems, options)};
-=======
-=======
->>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45
+
+        6c046220f8534f804e5ce3b92592c1c203320d45
 
     //document.addEventListener('DOMContentLoaded', function() {
     //    var elems = document.querySelectorAll('.sidenav');
@@ -140,8 +138,3 @@ $.ajax({
         calculateRent();
 
   });
-<<<<<<< HEAD
-
->>>>>>> cbad89c95c325e7afc50b4e1e2b876cca9780b5d
-=======
->>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45

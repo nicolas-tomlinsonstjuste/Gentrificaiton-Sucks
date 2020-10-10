@@ -1,20 +1,18 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .menu {
     font-family: 'Open Sans Condensed', sans-serif;
 }
-=======
 
-=======
->>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45
 body {
     display: flex;
-    min-height: 100vh;
+    height: 100;
     flex-direction: column;
+    background: url(slider.jpg);
   }
   
   main {
     flex: 1 0 auto;
+
   }
 
 /* .footer{
@@ -28,7 +26,45 @@ body {
  } */
 
 .nav-wrapper {
+  background-color: lightsteelblue;
     font-family: 'Open Sans Condensed', sans-serif
+}
+
+.main-section1{
+  font-family: 'Ubuntu', sans-serif;
+  margin:50px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.main-section1 ,p{
+  font-size: 19px;
+}
+
+.calculateBtn{
+  margin: 50px;
+  color: black;
+  background-color: burlywood;
+}
+
+.row{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.card-panel{
+  background-size: 85%;
+  background: url(slider.jpg);
+  box-shadow: 0 5px 15px rgb(0, 0, 1);
+  font-family: 'Ubuntu', sans-serif;
+  color: black
+}
+
+.input-field{
+  background-color: lightgray
+}
+
+.material-icons{
+  color: black;
 }
 
   .result-bad {
@@ -36,9 +72,13 @@ body {
     padding: 20px;
     background-color: rgb(128, 9, 0);
     color: white;
+    font-family: 'Open Sans Condensed', sans-serif
+
+
   }
 
   .result-fair {
+    box-shadow: 0 5px 15px rgb(0, 0, 1);
     margin: 50px;
     padding: 20px;
     background-color: rgb(180, 177, 1);
@@ -49,21 +89,25 @@ body {
     margin: 50px;
     padding: 20px;
     background-color: rgb(21, 128, 0);
+    box-shadow: 0 5px 15px rgb(0, 0, 1);
+
     color: white;
   }
 
-  .card-action {
+.page-footer{
+  text-align: end;
+  background-color: lightsteelblue;
+}
+ 
+.container1{
+  background-color: black;
+}
+.card-action {
     color: white;
   }
 
   .hide {
     display: none;
-<<<<<<< HEAD
-}
->>>>>>> cbad89c95c325e7afc50b4e1e2b876cca9780b5d
-=======
+
   }
-   .main-section1{
-  font-family: 'Open Sans Condensed', sans-serif
-  }
->>>>>>> 6c046220f8534f804e5ce3b92592c1c203320d45
+   
