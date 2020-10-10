@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>The Materialize Example</title>  
+        <title>Gentrification Sucks</title>  
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">    
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
          <!-- Compiled and minified CSS -->
@@ -21,7 +21,7 @@
                       <a href="#!" class="brand-logo">Gentrification sucks</a>
                       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                       <ul class="right hide-on-med-and-down">
-                        <li><a href="home.html">home</a></li>
+                        <li><a href="home.html">Home</a></li>
                           <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
@@ -33,7 +33,7 @@
                   
                    
                   <ul class="sidenav" id="mobile-demo">
-                    <li><a href="home.html">home</a></li>
+                    <li><a href="home.html">Home</a></li>
                           <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
@@ -59,13 +59,59 @@
                     </div>                   
                 </header>
          
-           
-                   
+
+           <main>
                 <div class="main-section1">
                   <h3>Why join the fight to protect communities against rising housing costs?</h3>
                   <p>historically disenfranchised communties are disproportionately affected by rising housing costs, forcing residential and business communities to move by raising rental and tax costs. This tool is designed to calculate cost of living, median income brackets by zipcode and (other factors - historic data?, ...) against the input rental property data to determine how much you should pay in rent in order to work against inflating market prices.</p>
                 </div>
-                <main>
+
+                <!-- <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <h4>Calculate Your Rent</h4>
+                    <p></p>
+                    <form id="form">
+                      <div class="row">
+                          <div class="input-field col s6">
+                            <input  id="zipCode1" type="text" class="validate">
+                            <label class="active" for="zipCode1">Zip Code</label>
+                          </div>
+                          <div class="input-field col s12">
+                              <select>
+                                <option value="0"></option>
+                                <option value="Efficieny">Studio</option>
+                                <option value="1 Bedroom">1 Bedroom</option>
+                                <option value="2 Bedroom">2 Bedroom</option>
+                                <option value="3 Bedroom">3 Bedroom</option>
+                                <option value="4 Bedroom">4 Bedroom</option>
+                              </select>
+                              <label>Number of Bedrooms</label>
+                            </div>
+                          <!-- <div class="input-field col s12">
+                              <select multiple>
+                                <option value="1">1 Bedroom</option>
+                                <option value="2">2 Bedroom</option>
+                                <option value="3">3 Bedroom</option>
+                                <option value="4">4 Bedroom</option>
+                              </select>
+                              <label>Prefered number of bedrooms</label> -->
+                          <!-- </div> -->
+                          <!-- <div class="input-field col s6">
+                              <input  id="rentRange" type="text" class="validate">
+                              <label class="active" for="rentRange">Rental asking price</label>
+                            </div>
+                        </div>
+                      <!-- <div id="test-slider"></div> -->
+                    <!-- </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button id="submit" class="modal-close waves-effect waves-green btn-flat">Submit</button>
+                  </div>
+                </div>
+         </div> --> -->
+                 -->
+
+
                      <!-- Button to trigger an on click event and run rental calculations -->
                      <a class="calculateBtn waves-effect waves-light btn">Calculate Fair Rent</a>
                      <div class=row>
@@ -88,7 +134,7 @@
                      <div class=row>
                             <!-- Fair Price result Card -->
                             <div class="card result-fair hide">
-                            <div class="card-content1">
+                            <div class="card-content">
                               <h5>CAUTION</h5>
                               <p>The rental asking price is at fair market rent as determined by HUD. If you agree to take this lease, at this price, we encourage you to discuss rental increase terms and histories with your landlord.
                               <br><br>
@@ -117,6 +163,20 @@
                       </div>
                     </div>
 
+                      <div class=row>
+                        <!-- Good Price result Card -->
+                      <div class="card result-warning hide" id="air-quality-warning">
+                      <div class="card-content">
+                        <h5>WARNING</h5>
+                        <p>A hidden cost in any housing market is health impacts from surrounding environmental factors. We have determined that the air quality in this zipcode is poor. Please take this information to weigh the right decision for your own health needs and as a possible rent negotiation factor.</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="Response.html">Landlord Response Template</a>
+                        <a href="Resources-further-reading.html">Reading Resources</a>
+                      </div>
+                  </div>
+                </div>
+
             </main>
        
             <footer class="page-footer">
@@ -144,7 +204,7 @@
                 </div>
              </footer>
            
-            <script src="script.js" async defer></script>
+            <!-- <script src="script.js" async defer></script> -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             <script src="script.js"></script>

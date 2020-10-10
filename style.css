@@ -104,6 +104,7 @@ body {
     color: white;
   }
 
+
 .page-footer{
   text-align: end;
   background-color: teal;
@@ -112,7 +113,16 @@ body {
 .container1{
   background-color: black;
 }
-.card-action {
+
+ .result-warning {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(128, 9, 0);
+    color: white;
+  }
+
+  .card-action {
+
     color: white;
   }
 
@@ -120,4 +130,28 @@ body {
     display: none;
 
   }
-   
+
+   .main-section1{
+  font-family: 'Open Sans Condensed', sans-serif
+  }
+
+  .negotiation {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(180, 177, 1);
+    color: white;
+  }
+
+  .thanks{
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(21, 128, 0);
+    color: white;
+  }
+
+  .walk-away {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(128, 9, 0);
+    color: white;
+  }
