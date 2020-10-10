@@ -53,18 +53,27 @@
                   <p></p>
                       <form id="form">
                         <div class="row">
+
+                            <div class="input-field col s6">
+                              <input  id="zipcode-input" type="text" class="validate">
+                              <label class="active" for="zipCode1"><p>Zip Code</p></label>
+                            </div>
+                            <div class="input-field col s12"> 
+                                <select id="bedroom-input">
+
                             <div class="input-field col s12 ">
                               <input  id="zipCode1" type="text" class="validate">
                               <label class="active" for="zipCode1"><p>Zip Code</p></label>
                             </div>
                             <div class="input-field col s12 "> 
                                 <select>
+
                                   <option value="0"></option>
-                                  <option value="Efficieny">Studio</option>
-                                  <option value="1 Bedroom">1 Bedroom</option>
-                                  <option value="2 Bedroom">2 Bedroom</option>
-                                  <option value="3 Bedroom">3 Bedroom</option>
-                                  <option value="4 Bedroom">4 Bedroom</option>
+                                  <option value="Efficiency">Studio</option>
+                                  <option value="One-Bedroom">1 Bedroom</option>
+                                  <option value="Two-Bedroom">2 Bedroom</option>
+                                  <option value="Three-Bedroom">3 Bedroom</option>
+                                  <option value="Four-Bedroom">4 Bedroom</option>
                                 </select>
                                 <label>Number of Bedrooms</label>
                               </div>
@@ -77,18 +86,26 @@
                                 </select>
                                 <label>Prefered number of bedrooms</label> -->
                             <!-- </div> -->
+
+                            <div class="input-field col s6">
+                                <input  id="price-input" type="text" class="validate">
+
                             <div class="input-field col s12 ">
                                 <input  id="rentRange" type="text" class="validate">
+
                                 <label class="active" for="rentRange">Rental asking price</label>
                               </div>
                           </div>
                         <!-- <div id="test-slider"></div> -->
+
+                        <!-- Button to trigger an on click event and run rental calculations -->
+                        <button id="submitBtn" class="submit-btn waves-effect waves-green">Submit</button>
+
                         <button type="submit" class="btn waves-effect waves-light">Submit</button> 
+
                         </form>
                     </div>
                </div>
-                     <!-- Button to trigger an on click event and run rental calculations -->
-                    
                      <div class=row>
                         <!-- Bad Price result Card -->
                         <div class="card result-bad hide">
@@ -184,6 +201,6 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             <script src="./script.js"></script>
             <script src="https://cdn.jsdelivr.net/gh/Dogfalo/materialize@master/extras/noUiSlider/nouislider.min.js"></script>
-            <script src="./form.js"></script>
+            <!-- <script src="./form.js"></script> -->
     </body>
 </html>
