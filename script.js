@@ -1,4 +1,5 @@
-var askingPrice = 1000;
+var askingPrice = 1420;
+var bedroomInput0 = 'Efficiency'
 var bedroomInput1 = 'One-Bedroom'
 var bedroomInput2 = 'Two-Bedroom'
 var bedroomInput3 = 'Three-Bedroom'
@@ -52,55 +53,86 @@ $(document).ready(function () {
                 console.log(zipCode);
                 for (var i = 0; i < response1.data.basicdata.length; i++) {
                     //if zipcode matches user input and bedroom choice === response1.data.basicdata['One-Bedroom'] then compare price vs price listed in response1.data.basicdata['One-Bedroom']. 
-                    if (response1.data.basicdata[i].zip_code === zipCode &&  bedroomInput1 === 'One-Bedroom' && askingPrice < response1.data.basicdata[i]['One-Bedroom']) {
+
+                        //Studio apartment
+                    if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput0 === 'Efficiency' && askingPrice < response1.data.basicdata[i]['Efficiency']) {
+                        console.log(response1.data.basicdata[i]['Efficiency'] + ' for a Studio');
+                        alert('Good studio deal! all me, this is a very great deal. Probably the best deal in history D.T');
+
+
+                    
+                    } else if(response1.data.basicdata[i].zip_code === zipCode && bedroomInput0 === 'Efficiency' && askingPrice > response1.data.basicdata[i]['Efficiency']) {
+                        console.log(response1.data.basicdata[i]['Efficiency'] + ' for a Studio');
+                        alert('Bad studio deal, not very good. A disaster! D.T');
+
+
+                    
+                    }else if(response1.data.basicdata[i].zip_code === zipCode && bedroomInput0 === 'Efficiency' && askingPrice === response1.data.basicdata[i]['Efficiency']) {
+                        console.log(response1.data.basicdata[i]['Efficiency'] + ' for a Studio');
+                        alert('It is an okay deal, I could have done better. D.T');
+
+
+                    
+                    }   //One Bedroom
+                    if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput1 === 'One-Bedroom' && askingPrice < response1.data.basicdata[i]['One-Bedroom']) {
                         console.log(response1.data.basicdata[i]['One-Bedroom'] + ' for a 1-Bedroom');
                         alert('Good one-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
                     
-                        // bedroomInput = drop down similar to var Varname = $("#zipCode").val().trim();
-                        // if (bedroomInput === 'One-Bedroom') {
-                        //     //1000 = user input for asking price
-                        //     if (response1.data.basicdata[i]['One-Bedroom'] > askingPrice ) {
-                        //         //do something/compare
-                        //     }
-                            
-                        // }
-                        // console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
-                        // console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
-                        // console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
+                       
                         
                     } else if (response1.data.basicdata[i].zip_code === zipCode &&  bedroomInput1 === 'One-Bedroom' && askingPrice > response1.data.basicdata[i]['One-Bedroom']) {
                         console.log(response1.data.basicdata[i]['One-Bedroom'] + ' for a 1-Bedroom');
                         alert('Bad one-bedroom deal, not very good. A disaster! D.T');
 
-                            //Two Bedroom
-                    } if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput2 === 'Two-Bedroom' && askingPrice < response1.data.basicdata[i]['Two-Bedroom']) {
+              
+                            
+                    }else if (response1.data.basicdata[i].zip_code === zipCode &&  bedroomInput1 === 'One-Bedroom' && askingPrice === response1.data.basicdata[i]['One-Bedroom']) {
+                        console.log(response1.data.basicdata[i]['One-Bedroom'] + ' for a 1-Bedroom');
+                        alert('It is an okay deal, I could have done better. D.T');
+
+
+                      
+                    }  //Two Bedroom
+                    if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput2 === 'Two-Bedroom' && askingPrice < response1.data.basicdata[i]['Two-Bedroom']) {
                         alert('Good two-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
                         console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
                     } else if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput2 === 'Two-Bedroom' && askingPrice > response1.data.basicdata[i]['Two-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
                         alert('Bad two-bedroom deal, not very good. A disaster! D.T');
 
+                    } else if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput2 === 'Two-Bedroom' && askingPrice === response1.data.basicdata[i]['Two-Bedroom']) {
+                        console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
+                        alert('It is an okay deal, I could have done better. D.T');
+
+                        
+                    }   
                         //Three Bedroom
-                    } if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput3 === 'Three-Bedroom' && askingPrice < response1.data.basicdata[i]['Three-Bedroom']) {
+                    if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput3 === 'Three-Bedroom' && askingPrice < response1.data.basicdata[i]['Three-Bedroom']) {
                         alert('Good three-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
                         console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
+
                     } else if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput3 === 'Three-Bedroom' && askingPrice > response1.data.basicdata[i]['Three-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
                         alert('Bad three-bedroom deal, not very good. A disaster! D.T');
 
+                        
+                    }else if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput3 === 'Three-Bedroom' && askingPrice === response1.data.basicdata[i]['Three-Bedroom']) {
+                        console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
+                        alert('It is an okay deal, I could have done better. D.T');
+
                         //Four Bedroom
-                    } if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput4 === 'Four-Bedroom' && askingPrice < response1.data.basicdata[i]['Four-Bedroom']) {
+                    }if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput4 === 'Four-Bedroom' && askingPrice < response1.data.basicdata[i]['Four-Bedroom']) {
                         alert('Good Four-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
                         console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
+
                     } else if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput4 === 'Four-Bedroom' && askingPrice > response1.data.basicdata[i]['Four-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
                         alert('Bad Four-bedroom deal, not very good. A disaster! D.T');
+
+                    }else if (response1.data.basicdata[i].zip_code === zipCode && bedroomInput4 === 'Four-Bedroom' && askingPrice === response1.data.basicdata[i]['Four-Bedroom']) {
+                        console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
+                        alert('It is an okay deal, I could have done better. D.T');
                     }
-
-                    
-
-                    
-                        
                     
                 }
             
@@ -108,7 +140,6 @@ $(document).ready(function () {
         });
     });
 })
-
 
 
     //document.addEventListener('DOMContentLoaded', function() {
