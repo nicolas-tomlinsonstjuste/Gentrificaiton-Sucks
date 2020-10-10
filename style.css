@@ -1,3 +1,148 @@
-title {
-  background-color: lightslategray;
+.menu {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  border: 20px;
+  background: url(philly.jpg);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ } */
+
+.nav-wrapper {
+  background-color: teal;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.main-section1 {
+  font-family: "Ubuntu", sans-serif;
+  margin: 50px;
+  text-align: center;
+  color: black;
+  max-width: 1300px;
+  padding: 50px;
+  background: rgb(216, 60, 96, 0.742);
+  opacity: 100%;
+}
+
+.main-section1,
+p {
+  font-size: 19px;
+  background: rgba(216, 60, 96, 0.742);
+  opacity: 200%;
+}
+
+.calculateBtn {
+  margin: 50px;
+  color: black;
+  background-color: lightsteelblue;
+}
+
+.row {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card-panel {
+  background-size: 85%;
+  box-shadow: 0 5px 15px rgb(0, 0, 1);
+  font-family: "Ubuntu", sans-serif;
+  border-style: solid;
+  border-color: rgba(216, 60, 96, 0.742);
+}
+
+.input-field {
+  background-color: rgba(teal);
+}
+
+.material-icons {
+  color: black;
+}
+
+.result-bad {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(128, 9, 0);
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.result-fair {
+  box-shadow: 0 5px 15px rgb(0, 0, 1);
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(180, 177, 1);
+  color: white;
+}
+
+.result-good {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(21, 128, 0);
+  box-shadow: 0 5px 15px rgb(0, 0, 1);
+
+  color: white;
+}
+
+.page-footer {
+  text-align: end;
+  background-color: teal;
+}
+
+.container1 {
+  background-color: black;
+}
+
+.result-warning {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(128, 9, 0);
+  color: white;
+}
+
+.card-action {
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.main-section1 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.negotiation {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(180, 177, 1);
+  color: white;
+}
+
+.thanks {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(21, 128, 0);
+  color: white;
+}
+
+.walk-away {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(128, 9, 0);
+  color: white;
 }
