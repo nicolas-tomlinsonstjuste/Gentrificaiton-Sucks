@@ -7,7 +7,7 @@ body {
     height: 100px;
     flex-direction: column;
     border: 20px;
-   background: url(philly.jpg);
+    background: url(philly.jpg);
   }
   
   main {
@@ -32,8 +32,6 @@ body {
 }
 
 .main-section1{
-
-.p1{
   font-family: 'Ubuntu', sans-serif;
   margin:65px;
   text-align: center;
@@ -58,8 +56,6 @@ body {
   margin: 50px;
   color: black;
   background-color: lightsteelblue;
-
-
 }
 
 .row{
@@ -82,84 +78,76 @@ body {
   color: black;
 }
 
-  .result-bad {
-    margin: 50px;
-    padding: 20px;
-    background-color: rgb(128, 9, 0);
-    color: white;
-    font-family: 'Open Sans Condensed', sans-serif
+.result-bad {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(128, 9, 0);
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif
+}
 
+.result-fair {
+  box-shadow: 0 5px 15px rgb(0, 0, 1);
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(180, 177, 1);
+  color: white;
+}
 
-  }
+.result-good {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(21, 128, 0);
+  box-shadow: 0 5px 15px rgb(0, 0, 1);
 
-  .result-fair {
-    box-shadow: 0 5px 15px rgb(0, 0, 1);
-    margin: 50px;
-    padding: 20px;
-    background-color: rgb(180, 177, 1);
-    color: white;
-  }
-
-  .result-good {
-    margin: 50px;
-    padding: 20px;
-    background-color: rgb(21, 128, 0);
-    box-shadow: 0 5px 15px rgb(0, 0, 1);
-
-    color: white;
-  }
-
-
+  color: white;
+}
 
 .container1{
   background-color: black;
 }
 
- .result-warning {
-    margin: 50px;
-    padding: 20px;
-    background-color: rgb(128, 9, 0);
-    color: white;
-  }
+.result-warning {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(128, 9, 0);
+  color: white;
+}
 
-  .card-action {
+.card-action {
+  color: white;
+}
 
-    color: white;
-  }
+.hide {
+  display: none;
 
-  .hide {
-    display: none;
+}
 
-  }
+.negotiation {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(180, 177, 1);
+  color: white;
+}
 
- 
+.thanks{
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(21, 128, 0);
+  color: white;
+}
 
-  .negotiation {
-    margin: 50px;
-    padding: 20px;
-    background-color: rgb(180, 177, 1);
-    color: white;
-  }
+.walk-away {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(128, 9, 0);
+  color: white;
+}
 
-  .thanks{
-    margin: 50px;
-    padding: 20px;
-    background-color: rgb(21, 128, 0);
-    color: white;
-  }
-
-  .walk-away {
-    margin: 50px;
-    padding: 20px;
-    background-color: rgb(128, 9, 0);
-    color: white;
-  }
-
-  .input-field {
-   background-color: white;
-   color: black;
-  }
-
+.input-field {
+  background-color: white;
+  color: black;
+}
 
 .page-footer{
   background-color: teal;
