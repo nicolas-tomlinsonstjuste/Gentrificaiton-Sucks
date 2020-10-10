@@ -5,9 +5,10 @@
 
 body {
     display: flex;
-    height: 100;
+    height: 100px;
     flex-direction: column;
-    background: url(slider.jpg);
+    border: 20px;
+   background: url(philly.jpg);
   }
   
   main {
@@ -26,25 +27,34 @@ body {
  } */
 
 .nav-wrapper {
-  background-color: lightsteelblue;
-    font-family: 'Open Sans Condensed', sans-serif
+  background-color: teal;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
 }
 
 .main-section1{
   font-family: 'Ubuntu', sans-serif;
   margin:50px;
   text-align: center;
-  color: whitesmoke;
+  color: black;
+  max-width: 1300px;
+  padding: 50px;
+  background: rgb(216, 60, 96, 0.742);
+  opacity: 100%;
 }
 
 .main-section1 ,p{
   font-size: 19px;
+  background: rgba(216, 60, 96, 0.742);
+  opacity: 200%;
 }
 
 .calculateBtn{
   margin: 50px;
   color: black;
-  background-color: burlywood;
+  background-color: lightsteelblue;
+
+
 }
 
 .row{
@@ -53,14 +63,14 @@ body {
 
 .card-panel{
   background-size: 85%;
-  background: url(slider.jpg);
   box-shadow: 0 5px 15px rgb(0, 0, 1);
   font-family: 'Ubuntu', sans-serif;
-  color: black
+  border-style: solid;
+  border-color:rgba(216, 60, 96, 0.742);
 }
 
 .input-field{
-  background-color: lightgray
+  background-color: rgba(teal)
 }
 
 .material-icons{
@@ -96,7 +106,7 @@ body {
 
 .page-footer{
   text-align: end;
-  background-color: lightsteelblue;
+  background-color: teal;
 }
  
 .container1{
