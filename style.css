@@ -155,3 +155,8 @@ body {
     background-color: rgb(128, 9, 0);
     color: white;
   }
+
+  .input-field {
+   background-color: white;
+   color: black;
+  }
