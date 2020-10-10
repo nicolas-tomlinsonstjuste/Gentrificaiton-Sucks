@@ -142,6 +142,15 @@ $(document).ready(function () {
 })
 
 
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, options)};
+
+        6c046220f8534f804e5ce3b92592c1c203320d45
+
+
     //document.addEventListener('DOMContentLoaded', function() {
     //    var elems = document.querySelectorAll('.sidenav');
       //  var instances = Sidenav.init(elems, options);
@@ -228,3 +237,4 @@ $(document).ready(function () {
         // submit.addEventListener("click", submitform);
 
   });
+
