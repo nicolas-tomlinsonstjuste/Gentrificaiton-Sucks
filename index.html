@@ -51,13 +51,18 @@
            <main>
                 <div class="main-section1">
                   <h3>Why join the fight to protect communities against rising housing costs?</h3>
-                  <p class="p1">historically disenfranchised communties are disproportionately affected by rising housing costs, forcing residential and business communities to move by raising rental and tax costs. This tool is designed to calculate cost of living, median income brackets by zipcode and (other factors - historic data?, ...) against the input rental property data to determine how much you should pay in rent in order to work against inflating market prices.</p>
+
+                  <p class="title2">historically disenfranchised communties are disproportionately affected by rising housing costs, forcing residential and business communities to move by raising rental and tax costs. This tool is designed to calculate cost of living, median income brackets by zipcode and (other factors - historic data?, ...) against the input rental property data to determine how much you should pay in rent in order to work against inflating market prices.</p>
+                  <div class="title">
+                    
                   <h4>Calculate Your Rent</h4>
+                </div>
                   <p></p>
                       <form id="form">
                         <div class="row">
+
                             <div class="input-field col s12">
-                              <input  id="zipCode-input" type="text" class="validate">
+                              <input  id="zipcode-input" type="text" class="validate">
                               <label class="active" for="zipCode1"><p>Zip Code</p></label>
                             </div>
                             <div class="input-field col s12"> 
@@ -71,33 +76,24 @@
                                 </select>
                                 <label>Number of Bedrooms</label>
                               </div>
-                            <!-- <div class="input-field col s12">
-                                <select multiple>
-                                  <option value="1">1 Bedroom</option>
-                                  <option value="2">2 Bedroom</option>
-                                  <option value="3">3 Bedroom</option> 
-                                  <option value="4">4 Bedroom</option>
-                                </select>
-                                <label>Prefered number of bedrooms</label> -->
-                            <!-- </div> -->
+                            
+
                             <div class="input-field col s12">
                                 <input  id="price-input" type="text" class="validate">
                                 <label class="active" for="rentRange">Rental asking price</label>
                               </div>
                           </div>
-                        <!-- <div id="test-slider"></div> -->
-                        <button id="submitBtn" class="submit-btn waves-effect waves-green">Submit</button>
+
+                        <button type="submit" class="btn waves-effect waves-light">Submit</button>
+
                         </form>
                     </div>
                </div>
-                     <!-- Button to trigger an on click event and run rental calculations -->
-                    
                      <div class=row>
-                        <!-- Bad Price result Card -->
                         <div class="card result-bad hide">
                           <div class="card-content">
                             <h5>HARD PASS</h5>
-                            <p>The rental asking price is ABOVE fair market rent as determined by HUD. If you agree to take this lease, at this price, you will be contributing to the economical impacts of gentrification.
+                            <p class="paragraph">The rental asking price is ABOVE fair market rent as determined by HUD. If you agree to take this lease, at this price, you will be contributing to the economical impacts of gentrification.
                               We understand that the house search process is frustrating and housing options can be limited but we urge you to consider how the impact of pushing out communities with historic roots is violence
                               that we can stand against by collectively refusing to contribute to raising housing costs.
                             <br><br>
@@ -110,7 +106,6 @@
                           </div>
                      </div>
                      <div class=row>
-                            <!-- Fair Price result Card -->
                             <div class="card result-fair hide">
                             <div class="card-content">
                               <h5>CAUTION</h5>
@@ -124,9 +119,7 @@
                             </div>
                       </div>
                       </div>
-                        <div class=row>
-                            <!-- Good Price result Card -->
-                          <div class="card result-good hide">
+                        <div class=row>                          <div class="card result-good hide">
                           <div class="card-content">
                             <h5>GO FOR IT!</h5>
                             <p>The rental asking price is below fair market rent as determined by HUD. We recommend that you go ahead and agree to sign!</p>
@@ -142,7 +135,6 @@
                     </div>
 
                       <div class=row>
-                        <!-- Good Price result Card -->
                       <div class="card result-warning hide" id="air-quality-warning">
                       <div class="card-content">
                         <h5>WARNING</h5>
@@ -182,12 +174,10 @@
                 </div>
              </footer>
            
-            <!-- <script src="script.js" async defer></script> -->
             <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             <script src="./script.js"></script>
             <script src="https://cdn.jsdelivr.net/gh/Dogfalo/materialize@master/extras/noUiSlider/nouislider.min.js"></script>
-            <script src="./form.js"></script>
     </body>
 </html>
