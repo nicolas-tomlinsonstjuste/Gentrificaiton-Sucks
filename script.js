@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Modal.init(modal,{});
     M.FormSelect.init(bedrooms,{});
 });
+
 // // noUiSlider.create(priceRange, {
 // //     start: [750, 1800],
 // //     connect: true,
@@ -25,7 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
 //     console.log('test success', data);
 // }
 // submit.addEventListener("click", submitform);
-
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
 
 $(document).ready(function () {
 
