@@ -91,25 +91,25 @@ $(document).ready(function () {
                     if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Efficiency' && price < response1.data.basicdata[i]['Efficiency']) {
                         console.log(response1.data.basicdata[i]['Efficiency'] + ' for a Studio');
                         //alert('Good studio deal! all me, this is a very great deal. Probably the best deal in history D.T');
-                        goodCard.removeAttribute("class", "hide");
+                        goodCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
-
+                        
                     } else if(response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Efficiency' && price > response1.data.basicdata[i]['Efficiency']) {
                         console.log(response1.data.basicdata[i]['Efficiency'] + ' for a Studio');
                         //alert('Bad studio deal, not very good. A disaster! D.T');
-                        badCard.removeAttribute("class", "hide");
+                        badCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
 
                     }else if(response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Efficiency' && price === response1.data.basicdata[i]['Efficiency']) {
                         console.log(response1.data.basicdata[i]['Efficiency'] + ' for a Studio');
                         //alert('It is an okay deal, I could have done better. D.T');
-                        fairCard.removeAttribute("class", "hide");
+                        fairCard.classList.remove("hide");
                           if (response[0].AQI > 100){
-                            warningCard.removeAttribute("class", "hide");
+                            warningCard.classList.remove("hide");
                           };
                     
                     }   
@@ -117,98 +117,98 @@ $(document).ready(function () {
                     if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'One-Bedroom' && price < response1.data.basicdata[i]['One-Bedroom']) {
                         console.log(response1.data.basicdata[i]['One-Bedroom'] + ' for a 1-Bedroom');
                         //alert('Good one-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
-                        goodCard.removeAttribute("class", "hide");
+                        goodCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };                      
                         
                     } else if (response1.data.basicdata[i].zip_code === zipCode &&  bedroom === 'One-Bedroom' && price > response1.data.basicdata[i]['One-Bedroom']) {
                         console.log(response1.data.basicdata[i]['One-Bedroom'] + ' for a 1-Bedroom');
                         //alert('Bad one-bedroom deal, not very good. A disaster! D.T');
-                        badCard.removeAttribute("class", "hide");
+                        badCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
               
                     }else if (response1.data.basicdata[i].zip_code === zipCode &&  bedroom === 'One-Bedroom' && price === response1.data.basicdata[i]['One-Bedroom']) {
                         console.log(response1.data.basicdata[i]['One-Bedroom'] + ' for a 1-Bedroom');
                         //alert('It is an okay deal, I could have done better. D.T');
-                        fairCard.removeAttribute("class", "hide");
+                        fairCard.classList.remove("hide");
                           if (response[0].AQI > 100){
-                            warningCard.removeAttribute("class", "hide");
+                            warningCard.classList.remove("hide");
                           };
                     }  
                     //Two Bedroom
                     if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Two-Bedroom' && price < response1.data.basicdata[i]['Two-Bedroom']) {
                         //alert('Good two-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
                         console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
-                        goodCard.removeAttribute("class", "hide");
+                        goodCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
 
                     } else if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Two-Bedroom' && price > response1.data.basicdata[i]['Two-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
                         //alert('Bad two-bedroom deal, not very good. A disaster! D.T');
-                        badCard.removeAttribute("class", "hide");
+                        badCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
                     } else if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Two-Bedroom' && price === response1.data.basicdata[i]['Two-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Two-Bedroom'] + ' for a 2-Bedroom');
                         //alert('It is an okay deal, I could have done better. D.T');
-                        fairCard.removeAttribute("class", "hide");
+                        fairCard.classList.remove("hide");
                           if (response[0].AQI > 100){
-                            warningCard.removeAttribute("class", "hide");
+                            warningCard.classList.remove("hide");
                           };
                     }   
                     //Three Bedroom
                     if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Three-Bedroom' && price < response1.data.basicdata[i]['Three-Bedroom']) {
                         //alert('Good three-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
                         console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
-                        goodCard.removeAttribute("class", "hide");
+                        goodCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
 
                     } else if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Three-Bedroom' && price > response1.data.basicdata[i]['Three-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
                         //alert('Bad three-bedroom deal, not very good. A disaster! D.T');
-                        badCard.removeAttribute("class", "hide");
+                        badCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
                         
                     }else if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Three-Bedroom' && price === response1.data.basicdata[i]['Three-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Three-Bedroom'] + ' for a 3-Bedroom');
                         //alert('It is an okay deal, I could have done better. D.T');
-                        fairCard.removeAttribute("class", "hide");
+                        fairCard.classList.remove("hide");
                           if (response[0].AQI > 100){
-                            warningCard.removeAttribute("class", "hide");
+                            warningCard.classList.remove("hide");
                           };
 
                     //Four Bedroom
                     }if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Four-Bedroom' && price < response1.data.basicdata[i]['Four-Bedroom']) {
                         //alert('Good Four-bedroom deal! all me, this is a very great deal. Probably the best deal in history D.T');
                         console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
-                        goodCard.removeAttribute("class", "hide");
+                        goodCard.classList.remove("hide");
                             if (response[0].AQI > 100){
-                              warningCard.removeAttribute("class", "hide");
+                              warningCard.classList.remove("hide");
                             };
 
                     } else if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Four-Bedroom' && price > response1.data.basicdata[i]['Four-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
                         //alert('Bad Four-bedroom deal, not very good. A disaster! D.T');
-                        badCard.removeAttribute("class", "hide");
+                        badCard.classList.remove("hide");
                         if (response[0].AQI > 100){
-                          warningCard.removeAttribute("class", "hide");
+                          warningCard.classList.remove("hide");
                         };
                     }else if (response1.data.basicdata[i].zip_code === zipCode && bedroom === 'Four-Bedroom' && price === response1.data.basicdata[i]['Four-Bedroom']) {
                         console.log(response1.data.basicdata[i]['Four-Bedroom'] + ' for a 4-Bedroom');
                         //alert('It is an okay deal, I could have done better. D.T');
-                        fairCard.removeAttribute("class", "hide");
+                        fairCard.classList.remove("hide");
                           if (response[0].AQI > 100){
-                            warningCard.removeAttribute("class", "hide");
+                            warningCard.classList.remove("hide");
                           };
                     } 
                 }

@@ -1,19 +1,19 @@
 .menu {
-    font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 body {
-    display: flex;
-    height: 100px;
-    flex-direction: column;
-    border: 20px;
-    background: url(philly.jpg);
-  }
-  
-  main {
-    flex: 1 0 auto;
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  border: 20px;
+  background: url(philly.jpg);
+  background-repeat: no-repeat;
+}
 
-  }
+main {
+  flex: 1 0 auto;
+}
 
 /* .footer{
     position: fixed;
@@ -27,54 +27,53 @@ body {
 
 .nav-wrapper {
   background-color: teal;
-    font-family: 'Open Sans Condensed', sans-serif;
-    
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
-.main-section1{
-  font-family: 'Ubuntu', sans-serif;
-  margin:65px;
+.main-section1 {
+  font-family: "Ubuntu", sans-serif;
+  margin: 65px;
   text-align: center;
   color: black;
   max-width: 1300px;
   padding: 50px;
   background: rgb(216, 60, 96, 0.742);
   opacity: 100%;
-  width:70%;
-  top:50%;
-  left:50%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
   transform: translate(15%, 10%);
 }
 
-.title2{
+.title2 {
   font-size: 19px;
   background: rgba(216, 60, 96, 0.742);
   opacity: 200%;
 }
 
-.calculateBtn{
+.calculateBtn {
   margin: 50px;
   color: black;
   background-color: lightsteelblue;
 }
 
-.row{
-  font-family: 'Ubuntu', sans-serif;
+.row {
+  font-family: "Ubuntu", sans-serif;
 }
 
-.card-panel{
+.card-panel {
   background-size: 85%;
   box-shadow: 0 5px 15px rgb(0, 0, 1);
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   border-style: solid;
-  border-color:rgba(216, 60, 96, 0.742);
+  border-color: rgba(216, 60, 96, 0.742);
 }
 
-.input-field{
-  background-color: rgba(teal)
+.input-field {
+  background-color: rgba(teal);
 }
 
-.material-icons{
+.material-icons {
   color: black;
 }
 
@@ -83,7 +82,7 @@ body {
   padding: 20px;
   background-color: rgb(128, 9, 0);
   color: white;
-  font-family: 'Open Sans Condensed', sans-serif
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 .result-fair {
@@ -103,7 +102,7 @@ body {
   color: white;
 }
 
-.container1{
+.container1 {
   background-color: black;
 }
 
@@ -120,7 +119,6 @@ body {
 
 .hide {
   display: none;
-
 }
 
 .negotiation {
@@ -130,7 +128,7 @@ body {
   color: white;
 }
 
-.thanks{
+.thanks {
   margin: 50px;
   padding: 20px;
   background-color: rgb(21, 128, 0);
@@ -149,7 +147,7 @@ body {
   color: black;
 }
 
-.page-footer{
+.page-footer {
   background-color: teal;
   text-align: left;
 }
@@ -158,3 +156,13 @@ body {
   color: black;
 }
  
+
+#mainResponse {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  z-index: 100;
+  margin-top: 200px;
+}
