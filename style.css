@@ -153,4 +153,8 @@ body {
   background-color: teal;
   text-align: left;
 }
+
+.input-field > label {
+  color: black;
+}
  
