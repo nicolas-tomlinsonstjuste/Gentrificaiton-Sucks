@@ -16,30 +16,34 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Modal.init(modal,{});
     M.FormSelect.init(bedrooms,{});
 });
-// noUiSlider.create(priceRange, {
-//     start: [750, 1800],
-//     connect: true,
-//     step: 1,
-//     orientation: 'horizontal', // 'horizontal' or 'vertical'
-//     range: {
-//         'min': 0,
-//         'max': 3000
-//     },
-// });
-function submitform() {
-    const data = {
-        zip: '',
-        bedrooms: bedrooms.value,
-        rentRange: '',
+ noUiSlider.create(priceRange, {
+     start: [750, 1800],
+     connect: true,
+          step: 1,
+     orientation: 'horizontal', // 'horizontal' or 'vertical'
+     range: {
+         'min': 0,
+         'max': 3000
+     },
+ });
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
+
+//function submitform() {
+//    const data = {
+//        zip: '',
+//        bedrooms: bedrooms.value,
+//        rentRange: '',
         // priceRange: priceRange.value
-    }
-    console.log('test success', data);
-}
-submit.addEventListener("click", submitform);
+//    }
+//    console.log('test success', data);
+//}
+//submit.addEventListener("click", submitform);
 
 
 $(document).ready(function () {
-
+  
   var askingPrice = 1420;
   var bedroomInput0 = 'Efficiency'
   var bedroomInput1 = 'One-Bedroom'
@@ -228,23 +232,18 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems, options)};
-
-        6c046220f8534f804e5ce3b92592c1c203320d45
 
 
     //document.addEventListener('DOMContentLoaded', function() {
     //    var elems = document.querySelectorAll('.sidenav');
       //  var instances = Sidenav.init(elems, options);
      // });
-     $(document).ready(function(){
-        $('.sidenav').sidenav();
-      });
-
-
+     
+    
 
       $("#calculateBtn").on("click", function () {
         var rentAsk = $("#rent-input").val().trim();
@@ -291,8 +290,7 @@ $(document).ready(function () {
         calculateRent();
 
 
-    )
-
+    
         // const form = document.querySelector("#form");
         // const submit = document.querySelector("#submit");
         // const modal = document.querySelector('.modal');
@@ -323,6 +321,8 @@ $(document).ready(function () {
         //     console.log('test success', data);
         // }
         // submit.addEventListener("click", submitform);
+ });
+  
 
-  });
-
+ 
+     

@@ -9,16 +9,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel = "stylesheet"  href= "style.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
     <body>
+
+
             <header> 
-                <nav>
-                    <div class="nav-wrapper">
+                  <div class="navbar-fixed">
+                    
+                    <nav class="nav-wrapper">
                       <a href="#!" class="brand-logo">Gentrification sucks</a>
-                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                      <a href="#"  class="sidenav-trigger" data-target="mobile-links">
+                        <i class="material-icons">menu</i></a>
                       <ul class="right hide-on-med-and-down">
-                        <li><a href="home.html">Home</a></li>
                           <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
@@ -27,11 +31,10 @@
                         </ul>
                       </div>
                     </nav>
-                  
+                
                    
-                  <ul class="sidenav" id="mobile-demo">
-                    <li><a href="home.html">Home</a></li>
-                          <li><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
+                  <ul class="sidenav" id="mobile-links">
+                          <li class="active"><a href="Resources-further-reading.html">Resources/Further Reading</a></li>
                           <li><a href="Response.html">response</a></li>
                           <li><a href="Have-a-voice.html">Have a voice!</a></li>
                           <li><a href="success-stories">Success-stories</a></li>
@@ -180,6 +183,7 @@
              </footer>
            
             <!-- <script src="script.js" async defer></script> -->
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             <script src="./script.js"></script>
