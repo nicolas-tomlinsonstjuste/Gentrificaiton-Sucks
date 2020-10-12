@@ -152,6 +152,11 @@ main {
   text-align: left;
 }
 
+.input-field > label {
+  color: black;
+}
+ 
+
 #mainResponse {
   display: flex;
   justify-content: center;
