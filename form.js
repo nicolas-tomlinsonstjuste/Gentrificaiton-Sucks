@@ -4,6 +4,7 @@ const modal = document.querySelector('.modal');
 const bedrooms = document.querySelector('select');
 const rent = document.querySelector('#rentRange')
 // const priceRange = document.getElementById('test-slider');
+// images found in another file
 
 document.addEventListener('DOMContentLoaded', function() {
     M.Modal.init(modal,{});
